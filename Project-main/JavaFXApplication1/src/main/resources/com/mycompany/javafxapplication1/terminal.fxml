@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.javafxapplication1.TerminalController">
+    <TextArea fx:id="terminalOutput" layoutX="10" layoutY="50" prefHeight="400" prefWidth="500" editable="false"/>
+    <TextField fx:id="commandInput" layoutX="10" layoutY="460" prefWidth="500" onKeyPressed="#handleEnterKey"/>
+</AnchorPane>

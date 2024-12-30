@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.javafxapplication1.FileManagerController">
+    <TextField fx:id="filePathField" promptText="Enter file path or browse" />
+    <Button text="Browse" onAction="#browseFile" />
+    <TextArea fx:id="fileContentArea" prefHeight="400" prefWidth="600" promptText="File content will appear here" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Create File" onAction="#createFile" />
+        <Button text="Open File" onAction="#openFile" />
+        <Button text="Save Changes" onAction="#saveFile" />
+        <Button text="Delete File" onAction="#deleteFile" />
+        <Button text="Distribute File" onAction="#distributeChunks" />
+    </HBox>
+</VBox>
+
